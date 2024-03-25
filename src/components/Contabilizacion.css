@@ -1,0 +1,12 @@
+/* src/components/Contabilizacion.css */
+.unique-contabilizacion-style {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border: 2px dashed #999;
+    border-radius: 8px;
+  }
+  
+  .unique-contabilizacion-style h2 {
+    color: #666;
+  }
+  

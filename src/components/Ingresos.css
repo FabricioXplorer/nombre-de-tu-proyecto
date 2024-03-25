@@ -1,0 +1,12 @@
+/* src/components/Ingresos.css */
+.unique-ingresos-style {
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 2px dashed #999;
+    border-radius: 8px;
+  }
+  
+  .unique-ingresos-style h2 {
+    color: #666;
+  }
+  

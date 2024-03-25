@@ -1,0 +1,26 @@
+/* src/components/Compras.css */
+.unique-compras-style {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .unique-compras-style h2 {
+    color: #555;
+  }
+  .agregar-cliente-btn {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  
+  .agregar-cliente-btn:hover {
+    background-color: #0056b3; /* Cambiar color de fondo al pasar el ratón */
+  }
+  
+  

@@ -1,0 +1,12 @@
+/* src/components/Egresos.css */
+.unique-egresos-style {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .unique-egresos-style h2 {
+    color: #555;
+  }
+  

@@ -1,0 +1,127 @@
+/* Categorias.css */
+
+.categorias-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.categorias-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.categorias-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categoria-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoria-item span {
+  font-size: 18px;
+}
+
+.categoria-item button {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.categoria-item button:hover {
+  background-color: #f5222d;
+}
+
+.categoria-form {
+  margin-top: 20px;
+}
+
+.categoria-form input {
+  width: calc(100% - 24px);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.categoria-form button {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.categoria-form button:hover {
+  background-color: #096dd9;
+}
+
+.formulario-categoria-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-categoria-container h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.formulario-categoria-container input {
+  width: calc(100% - 24px);
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario-categoria-container .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.formulario-categoria-container .button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario-categoria-container .guardar-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.formulario-categoria-container .guardar-btn:hover {
+  background-color: #45a049;
+}
+
+.formulario-categoria-container .cancelar-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.formulario-categoria-container .cancelar-btn:hover {
+  background-color: #d32f2f;
+}

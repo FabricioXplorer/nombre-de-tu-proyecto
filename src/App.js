@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Navigation from './components/Navigation';
+import Clientes from './components/Clientes';
+import Categorias from './components/Categorias';
+import Productos from './components/Productos';
+import Ventas from './components/Ventas';
+import DetallesVentas from './components/DetallesVentas';
+import Compras from './components/Compras';
+import Contabilizacion from './components/Contabilizacion';
+import Movimientos from './components/Movimientos';
+import Ingresos from './components/Ingresos';
+import Egresos from './components/Egresos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navigation />
+        <Routes>
+          <Route path="/clientes" element={<Clientes />} />
+          <Route path="/categorias" element={<Categorias />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/ventas" element={<Ventas />} />
+          <Route path="/detalles-ventas" element={<DetallesVentas />} />
+          <Route path="/compras" element={<Compras />} />
+          <Route path="/contabilizacion" element={<Contabilizacion />} />
+          <Route path="/movimientos" element={<Movimientos />} />
+          <Route path="/ingresos" element={<Ingresos />} />
+          <Route path="/egresos" element={<Egresos />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
