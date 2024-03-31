@@ -1,0 +1,74 @@
+.sidebar {
+  width: 200px; /* Ancho del sidebar */
+  height: 100%; /* Altura del sidebar */
+   /* Color de fondo del sidebar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Agrega barra de desplazamiento vertical si es necesario */
+  border-right: 1px solid #ccc; /* Agrega un borde derecho */
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-item {
+  position: relative;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.submenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none; /* Oculta el submenu por defecto */
+}
+
+.sidebar-item:hover .submenu {
+  display: block; /* Muestra el submenu cuando se pasa el mouse sobre el item */
+}
+
+.submenu-item {
+  padding-left: 20px; /* Ajusta la indentación del submenu */
+}
+
+.submenu-item a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 0; /* Ajusta el espaciado del submenu */
+  display: block;
+}
+
+.submenu-item a:hover {
+  background-color: #f9f9f9; /* Cambia el color de fondo al pasar el mouse */
+}
+.contenido-pagina {
+  margin-left: 50px; /* Ancho del sidebar */
+}
+.contenido-pagina {
+  width: calc(100% - 50px); /* Ancho total menos el ancho del sidebar */
+}
+.sidebar-icon {
+  color: black;
+}
+.sidebar-icon:hover{
+  color: red;
+}

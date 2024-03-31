@@ -1,0 +1,126 @@
+$color-primario: #000000;
+$color-secundario: #f44336;
+$color-secundario-oscuro: #d32f2f;
+
+@mixin boton-estilo {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: white;
+
+  
+  &:hover,
+  &:focus {
+    background-color: $color-secundario;
+  }
+
+  &:active {
+    background-color: darken($color-secundario, 10%);
+  }
+}
+
+button {
+  @include boton-estilo;
+}
+
+.guardar-btn {
+  background-color: $color-primario;
+
+  &:hover,
+  &:focus {
+    background-color: $color-secundario;
+  }
+
+  &:active {
+    background-color: darken($color-secundario, 10%);
+  }
+}
+
+.cancelar-btn {
+  background-color: $color-secundario;
+
+  &:hover,
+  &:focus {
+    background-color: $color-secundario-oscuro;
+  }
+
+  &:active {
+    background-color: darken($color-secundario-oscuro, 10%);
+  }
+}
+
+.categorias-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 60%;
+}
+
+.categorias-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categorias-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categoria-item {
+  border-bottom: 1px solid #000000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoria-container {
+  display: flex;
+  align-items: center;
+}
+
+.categoria-container span {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.acciones-container {
+  display: flex;
+}
+
+.acciones-container button {
+  margin-left: 10px;
+}
+
+.formulario-categoria-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.formulario-categoria-container h2 {
+  margin-bottom: 20px;
+}
+
+.formulario-categoria-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario-categoria-container .button-container {
+  display: flex;
+  justify-content: space-between;
+}

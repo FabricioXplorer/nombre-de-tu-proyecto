@@ -1,0 +1,16 @@
+/* src/components/Contabilizacion.css */
+.unique-contabilizacion-style {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 60%;
+  }
+  
+  .unique-contabilizacion-style h2 {
+    color: #666;
+  }
+  .container-contabilizacion{
+    width: 10%;
+  }
+  

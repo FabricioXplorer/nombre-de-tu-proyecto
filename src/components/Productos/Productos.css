@@ -1,0 +1,167 @@
+.productos-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 1s;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  width: 60%;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.productos-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.productos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.producto-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.producto-item:hover {
+  background-color: #f5f5f5;
+}
+
+.producto-header {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.acciones-container {
+  display: flex;
+  align-items: center;
+}
+
+.producto-item button,
+.formulario-producto-container .button-container button {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.producto-item button:hover,
+.formulario-producto-container .button-container button:hover {
+  background-color: #f5222d;
+}
+
+.formulario-producto-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: scaleUp 0.5s;
+  width: 80%;
+  max-width: 500px;
+}
+
+@keyframes scaleUp {
+  from { transform: translate(-50%, -50%) scale(0); }
+  to { transform: translate(-50%, -50%) scale(1); }
+}
+
+.formulario-producto-container h2 {
+  margin-bottom: 20px;
+  color: #3f51b5;
+}
+
+.formulario-producto-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.formulario-producto-container .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario-producto-container .guardar-producto-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.formulario-producto-container .guardar-producto-btn:hover {
+  background-color: #45a049;
+}
+
+.formulario-producto-container .cancelar-producto-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.formulario-producto-container .cancelar-producto-btn:hover {
+  background-color: #d32f2f;
+}
+
+.ventana-emergente {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: scaleUp 0.5s;
+  width: 80%;
+  max-width: 500px;
+}
+
+.ventana-emergente form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ventana-emergente select,
+.ventana-emergente input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ventana-emergente button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.ventana-emergente button:hover {
+  background-color: #45a049;
+}
